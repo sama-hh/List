@@ -45,32 +45,35 @@ public class Main {
         else System.out.println("not found");
 
         /// Sack
-//        System.out.println("Sack");
-//
-//        Sack sack = new Sack();
-//
-//        sack.add(23);
-//        sack.add(123);
-//        sack.add(43);
-//        sack.add(454);
-//        sack.add(65);
-//        sack.add(23);
-//        sack.add(34);
-//        sack.add(435);
-//
-//        sack.print();
-//        System.out.println("get = " + sack.get(1));
-//        System.out.println("size = " + sack.size());
-//        sack.removeLastElement();
-//        sack.print();
-//        sack.removeLastElement();
-//        sack.removeLastElement();
-//        sack.print();
-//        System.out.println("size = " + sack.size());
-//
-//        sack.add(435);
-//        sack.print();
-//        sack.print();
+        System.out.println("Sack");
+
+        Sack sack = new Sack();
+
+        sack.add(23);
+        sack.add(123);
+        sack.add(43);
+        sack.add(454);
+        sack.add(65);
+        sack.add(23);
+        sack.add(34);
+        sack.add(435);
+
+        sack.print();
+        System.out.println("get = " + sack.get(1));
+        System.out.println("size = " + sack.size());
+        sack.removeLastElement();
+        sack.print();
+        sack.removeLastElement();
+        sack.removeLastElement();
+        sack.print();
+        System.out.println("size = " + sack.size());
+
+        sack.add(435);
+        sack.print();
+        sack.removeByIndex(1);
+        sack.add(234);
+
+        sack.print();
 
     }
 }

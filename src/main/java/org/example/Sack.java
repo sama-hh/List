@@ -47,6 +47,20 @@ public class Sack {
         arr = newArr;
     }
 
+    public void removeByIndex(int index) {
+        int[] newArr = new int[arr.length - 1];
+        int count = 0;
+
+        for(int i = 0; i < newArr.length; i++) {
+            if(i != index) {
+                newArr[count] = arr[i];
+                count++;
+            }
+        }
+        size--;
+        arr = newArr;
+    }
+
     public void print() {
         for (int i = 0; i < size; i++) {
             System.out.print(arr[i] + " ");
