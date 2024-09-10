@@ -1,34 +1,31 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class School {
-    private List <Student> studentsList;
+    private Map<String, Student> studentsMap;
 
     public School() {
-        studentsList = new ArrayList<>();
+        studentsMap = new HashMap<>();
     }
 
     public void addStudent(Student student) {
-        studentsList.add(student);
+        studentsMap.put(student.getStudentId(),student);
     }
 
     public Student getStudentById(String id) {
-        for (Student student : studentsList) {
-            if(student.getStudentId().equals(id)) {
-                return student;
-            };
-        }
-        return null;
+        return studentsMap.get(id);
     }
 
     public void removeStudent(Student student) {
-        studentsList.remove(student);
+        studentsMap.remove(student.getStudentId());
     }
 
     public void printStudents() {
-        for (Student student : studentsList) {
+        for (Student student : studentsMap.values()) {
             System.out.println(student);
         }
     }
